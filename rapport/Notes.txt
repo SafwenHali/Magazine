@@ -1,0 +1,73 @@
+0/	install VS Code;
+	install mongoDB;
+	install gitBash;
+	install nodeJS;
+	install  yarn;
+	install react;
+1/ Git Bash
+	create folder
+	create package json
+	open on VS Code
+
+2/ Production Dependancies //VS Code terminal
+	install nodejs framework: express and use mongoose to connect it to MONGO 							DB data base (mongoose object data modeling
+		-npm i express 
+		-npm i mongoose
+	install nodemoon (automatic node server)
+		-npm install -g nodemon //yarn global add nodemon
+		-npm install --save-dev nodemon //yarn add nodemon -D
+
+3/ create server.js(run dev)
+	require express
+	-npm run dev //yarn run dev
+
+*optional/ create .env (DOTenv) 
+
+4/ create config folder
+		//default local mongoDB ==> localhost:27017
+	connectDB
+		require mongoose
+		connect with mongoose: 
+			try { mongoose.connect() }catch(err){}
+			*optional for DOTenv/
+			./.env | DB_URI='mongodb://localhost:27017/DB_Magazine'
+			./config/connectDB.js | mongoose.connect(process.env.DB_URI);
+
+5/rest api
+	prepare for rest api (models,routes,controllers,services)
+
+6/ create article schema (model)
+		s=mongoose.Schema
+//////////////////////////28:00/////////////////////////////		
+7/ server routing article
+	article route
+		router.get("",(req,res) => {}
+	link router in server.js 
+		app.use("/api/article", require("./routes/articles"))
+	install postman (test)
+		use postman method GET to test routing 
+
+8/ HTTPS Methods
+	POST method
+
+	router.post("/", async (req,res)   => {
+ 		 try{  console.log(req.body);
+    			res.send("post article");
+    			const newArticle = new Article({...req.body});
+  				  await newArticle.save()
+  			}
+   		 catch(err){ 	console.log(err);
+       					 res.status(400).send("can not save it");
+       				}
+    });
+
+	test POST with postman and mongoDB compass
+
+	
+	
+			
+
+
+
+
+	

@@ -1,0 +1,23 @@
+Notes rapport:
+NoSQL databases (not only SQL) are non-tabular databases and store data differently than relational tables. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.
+	-src:https://www.mongodb.com/nosql-explained
+
+NoSQL databases allow developers to store huge amounts of unstructured data, giving them a lot of flexibility.
+
+Types of NoSQL databases:
+
+-Document databases store data in documents similar to JSON (JavaScript Object Notation) objects. Each document contains pairs of fields and values. The values can typically be a variety of types including things like strings, numbers, booleans, arrays, or objects.
+
+-Key-value databases are a simpler type of database where each item contains keys and values.
+
+-Wide-column stores store data in tables, rows, and dynamic columns.
+
+-Graph databases store data in nodes and edges. Nodes typically store information about people, places, and things, while edges store information about the relationships between the nodes.
+
+API (Application Program Interface) is an agreed way to send and receive data between computers. For example, if you want to display Google Maps on your site, but the maps are on Google's servers, you need a way to ask Google to provide you with the maps. The way to ask Google to send you the requested maps is through an API provided by Google that tells you to which web addresses should you send the requests to get the data. In a more formal language, you need to send a request to the remote server to get a response.
+
+REST (Representational State Transfer) is an API that defines a set of functions that programmers can use to send requests and receive responses using the HTTP protocol methods such as GET and POST.
+
+REST API can be used by any site or application no matter what language it is written in because the requests are based on the universal HTTP protocol, and the information is usually returned in the JSON format that almost all of the programming languages can read.
+
+Postman is an application used for API testing. It is an HTTP client that tests HTTP requests, utilizing a graphical user interface, through which we obtain different types of responses that need to be subsequently validated. 
