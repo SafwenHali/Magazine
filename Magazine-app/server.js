@@ -15,4 +15,3 @@ app.use("/api/article", require("./routes/articles"))
 app.listen(port, (err) => {
   err ? console.error(err) : console.log("server is running on port: ",port)
 });
-
